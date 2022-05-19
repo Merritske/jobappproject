@@ -7,28 +7,28 @@ function Home() {
     <button className="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
         <span className="navbar-toggler-icon"></span>
     </button>
-    <a className="navbar-brand" href="#" title="Home">
-        <i class="fa fa-cube"></i>
+    <a className="navbar-brand" href="home" title="Home">
+        <i className="fa fa-cube"></i>
     </a>
     <div className="collapse navbar-collapse" id="navbarCollapse">
         <ul className="navbar-nav ml-auto">
             <li className="nav-item">
-                <a className="nav-link" href="#" title="Work">
+                <a className="nav-link" href="work" title="Work">
                     Work
                 </a>
             </li>
             <li className="nav-item">
-                <a class="nav-link" href="#" title="Jobs">
+                <a className="nav-link" href="jobs" title="Jobs">
                     Jobs
                 </a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#" title="Blog">
+            <li className="nav-item">
+                <a className="nav-link" href="blog" title="Blog">
                     Blog
                 </a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#" title="Contact">
+            <li className="nav-item">
+                <a className="nav-link" href="contact" title="Contact">
                     Contact
                 </a>
             </li>
@@ -36,15 +36,15 @@ function Home() {
     </div>
 </nav>
 
-<header class="masthead">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-10 offset-md-1">
-                <div class="site-heading">
-                    <h1 class="heading">
+<header className="masthead">
+    <div className="container">
+        <div className="row">
+            <div className="col-md-10 offset-md-1">
+                <div className="site-heading">
+                    <h1 className="heading">
                         Open Positions
                     </h1>
-                    <span class="subheading">
+                    <span className="subheading">
                         Current listings for web design and front-end development jobs.
                     </span>
                 </div>
@@ -54,85 +54,85 @@ function Home() {
 </header>
 
 <section>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-10 offset-md-1">
-                <ul class="job-list">
-                    <li class="job-preview">
-                        <div class="content float-left">
-                            <h4 class="job-title">
+    <div className="container">
+        <div className="row">
+            <div className="col-md-10 offset-md-1">
+                <ul className="job-list">
+                    <li className="job-preview">
+                        <div className="content float-left">
+                            <h4 className="job-title">
                                 Senior Web Designer
                             </h4>
-                            <h5 class="company">
+                            <h5 className="company">
                                 Seattle, WA
                             </h5>
                         </div>
-                        <a href="#" class="btn btn-apply float-sm-right float-xs-left">
+                        <a href="apply" className="btn btn-apply float-sm-right float-xs-left">
                             Apply
                         </a>
                     </li>
-                    <li class="job-preview">
-                        <div class="content float-left">
-                            <h4 class="job-title">
+                    <li className="job-preview">
+                        <div className="content float-left">
+                            <h4 className="job-title">
                                 Front-End Engineer
                             </h4>
-                            <h5 class="company">
+                            <h5 className="company">
                                 New York, NY
                             </h5>
                         </div>
-                        <a href="#" class="btn btn-apply float-sm-right float-xs-left">
+                        <a href="apply" className="btn btn-apply float-sm-right float-xs-left">
                             Apply
                         </a>
                     </li>
-                    <li class="job-preview">
-                        <div class="content float-left">
-                            <h4 class="job-title">
+                    <li className="job-preview">
+                        <div className="content float-left">
+                            <h4 className="job-title">
                                 UI/UX Designer
                             </h4>
-                            <h5 class="company">
+                            <h5 className="company">
                                 Los Angeles, CA
                             </h5>
                         </div>
-                        <a href="#" class="btn btn-apply float-sm-right float-xs-left">
+                        <a href="apply" className="btn btn-apply float-sm-right float-xs-left">
                             Apply
                         </a>
                     </li>
-                    <li class="job-preview">
-                        <div class="content float-left">
-                            <h4 class="job-title">
+                    <li className="job-preview">
+                        <div className="content float-left">
+                            <h4 className="job-title">
                                 Web Developer
                             </h4>
-                            <h5 class="company">
+                            <h5 className="company">
                                 Los Angeles, CA
                             </h5>
                         </div>
-                        <a href="#" class="btn btn-apply float-sm-right float-xs-left">
+                        <a href="apply" className="btn btn-apply float-sm-right float-xs-left">
                             Apply
                         </a>
                     </li>
-                    <li class="job-preview">
-                        <div class="content float-left">
-                            <h4 class="job-title">
+                    <li className="job-preview">
+                        <div className="content float-left">
+                            <h4 className="job-title">
                                 Web Designer &amp; Developer
                             </h4>
-                            <h5 class="company">
+                            <h5 className="company">
                                 Seattle, WA
                             </h5>
                         </div>
-                        <a href="#" class="btn btn-apply float-sm-right float-xs-left">
+                        <a href="apply" className="btn btn-apply float-sm-right float-xs-left">
                             Apply
                         </a>
                     </li>
-                    <li class="job-preview">
-                        <div class="content float-left">
-                            <h4 class="job-title">
+                    <li className="job-preview">
+                        <div className="content float-left">
+                            <h4 className="job-title">
                                 Visual Designer
                             </h4>
-                            <h5 class="company">
+                            <h5 className="company">
                                 Los Angeles, CA
                             </h5>
                         </div>
-                        <a href="#" class="btn btn-apply float-sm-right float-xs-left">
+                        <a href="apply" className="btn btn-apply float-sm-right float-xs-left">
                             Apply
                         </a>
                     </li>
