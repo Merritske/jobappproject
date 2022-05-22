@@ -3,12 +3,14 @@ import "../styles/home.css"
 
 function Home() {
   return (
-    <div><nav className="navbar navbar-toggleable-md navbar-light fixed-top" id="navbar-main">
-    <button className="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+    <div>
+        <nav className="navbar navbar-toggleable-md navbar-light fixed-top" id="navbar-main">
+    {/* <button className="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
         <span className="navbar-toggler-icon"></span>
-    </button>
+    </button> */}
     <a className="navbar-brand" href="home" title="Home">
         <i className="fa fa-cube"></i>
+     
     </a>
     <div className="collapse navbar-collapse" id="navbarCollapse">
         <ul className="navbar-nav ml-auto">

@@ -70,7 +70,20 @@ a:focus {
 #navbar-main .navbar-brand .fa-cube {
 	font-size: 2rem;
 }
+.navbar-nav{
+	display: flex;
+	flex-direction: row;
+list-style-type: none;
 
+}
+.nav-link{
+	text-decoration: none;
+}
+nav{
+	width: 100%;
+	display: flex;
+	justify-content: space-between ;
+}
 header.masthead {
 	padding-top: 4rem;
 	padding-bottom: 4rem;
