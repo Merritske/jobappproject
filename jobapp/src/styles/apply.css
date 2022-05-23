@@ -1,0 +1,37 @@
+body {
+    background: rgb(243, 243, 251);
+    background: radial-gradient(
+      circle,
+      rgba(2, 0, 36, 1) 0%,
+      rgb(145, 194, 206) 0%,
+      rgb(248, 248, 250) 100%
+    );
+  }
+  
+  .container {
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height:auto;
+    max-width: 500px;
+    width: 100%;
+    margin: auto;
+     
+  }
+  .container > form {
+    width: 200%;
+    border: 1px solid #cd2424;
+    padding: 60px;
+    border-radius: 5px;
+    background: #fff;
+  }
+   
+  
+  button {
+    background: #0563b4 !important;
+  }
+  p {
+    color: red;
+  }
+  
