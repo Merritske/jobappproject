@@ -7,8 +7,8 @@ const Apply = () => {
     Firstname: "",
     Lastname: "",
     email: "",
-    adress: "",
-    adress2: "",
+    qalification: "",
+    exprience: "",
   };
   const [formValues, setFormValues] = useState(initialValues);
   const [formErrors, setFormErrors] = useState({});
@@ -49,7 +49,7 @@ const Apply = () => {
   };
   return (
     <>
-    <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
@@ -70,7 +70,7 @@ const Apply = () => {
             <div className="col-md-7 col-lg-8">
               {/* <pre>{JSON.stringify(formValues, undefined, 2)}</pre> */}
               <form onSubmit={handleSubmit}>
-                <h1>Apply</h1>
+                <h3>Submit Your Application </h3>
                 <div className="row g-3">
                   <div>
                     <div className="row">
@@ -129,17 +129,17 @@ const Apply = () => {
                   </div>
                   <div className="col-12"></div>
                    <div className="col-12">
-                    <label htmlFor="address" className="form-label">
+                    <label htmlFor="Qalification" className="form-label">
                       Qalification
                     </label>
                     <input
                       type="text"
                       className="form-control"
-                      id="address"
-                      placeholder="Qalification"
-                      name="adress"
+                      id="qal"
+                      placeholder="text"
+                      name="ftext"
                       onChange={handleChange}
-                      value={formValues.adress}
+                      value={formValues.qalification}
                     />
                   </div>
                   
@@ -154,7 +154,7 @@ const Apply = () => {
                       placeholder="Exprience"
                       name="exprience"
                       onChange={handleChange}
-                      value={formValues.adress}
+                      value={formValues.exprience}
                     />
                   </div>
                   <button className="btn btn-dark" type="submit">
@@ -194,3 +194,4 @@ const Apply = () => {
 };
 
 export default Apply;
+ 
