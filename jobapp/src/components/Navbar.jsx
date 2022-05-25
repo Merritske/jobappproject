@@ -29,11 +29,8 @@ function Navbar() {
             Blog
           </Link>
         </li>
-        <li className="nav-item">
-          <Link className="nav-link" to="/contact" title="Contact">
-            Contact
-          </Link>
-        </li>
+    
+  
       </ul>
     </div>
   </nav></div>
