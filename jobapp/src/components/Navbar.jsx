@@ -1,14 +1,15 @@
 import React from 'react'
 import { Link } from "react-router-dom";
+import '../styles/navbar.css'
 
 function Navbar() {
   return (
     <div> <nav
-    className="navbar navbar-toggleable-md navbar-light fixed-top"
+    className="navbar fixed-top"
     id="navbar-main"
   >
  
-    <Link className="navbar-brand" to="/home" title="Home">
+    <Link className="navbar-brand" to="/" title="Home">
       <i className="fa fa-cube"></i>
     </Link>
         <div className="navbar-collapse" id="navbarCollapse">

@@ -1,0 +1,118 @@
+@import url(https://fonts.googleapis.com/css?family=Hind);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	color: #31383d;
+	font-size: 1.1rem;
+}
+
+section {
+	padding: 30px 0;
+	background: #fff;
+}
+
+p {
+	line-height: 1.5;
+	margin: 30px 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Hind', sans-serif;
+  font-weight: 800;
+}
+
+a {
+	color: #31383d;
+	-webkit-transition: all 0.2s;
+	-moz-transition: all 0.2s;
+	transition: all 0.2s;
+}
+
+a:hover,
+a:focus {
+	color: #73a5fc;
+}
+
+#navbar-main {
+	position: absolute;
+	font-family: 'Hind', sans-serif;
+	background-color: #fff;
+	border-bottom: 1px solid #d7e2e9;
+	display: flex;
+	justify-content: space-evenly;
+    align-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+#navbar-main .navbar-brand {
+	color: #96a4b1;
+}
+
+#navbar-main .navbar-toggler {
+	padding: 0.5rem;
+	border: none;
+}
+
+#navbar-main .navbar-toggler-icon {
+	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(68, 189, 255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+#navbar-main .navbar-nav > li.nav-item > a {
+	text-transform: uppercase;
+	font-size: 0.875rem;
+	font-weight: 600;
+	letter-spacing: 1px;
+	text-align: center;
+}
+
+#navbar-main .navbar-brand .fa-cube {
+	font-size: 2rem;
+}
+.navbar-nav{
+	display: flex;
+	flex-direction: row;
+list-style-type: none;
+justify-content: flex-end;
+}
+.nav-link{
+	text-decoration: none;
+}
+nav{
+	width: 100%;
+	display: flex;
+	justify-content: space-between ;
+}
+
+	#navbar-main {
+		background: transparent;
+		border-bottom: 1px solid transparent;
+	}
+	
+	#navbar-main .navbar-brand {
+		color: #fff;
+		opacity: 0.8;
+		padding: 0.95rem 1.2rem;
+	}
+	
+	#navbar-main .navbar-brand:hover,
+	#navbar-main .navbar-brand:focus {
+		opacity: 1;
+	}
+	
+	#navbar-main .navbar-nav > li.nav-item > a {
+		color: #fff;
+		opacity: 0.8;
+		padding: 0.95rem 1.2rem;
+	}
+	
+	#navbar-main .navbar-nav > li.nav-item > a:hover,
+	#navbar-main .navbar-nav > li.nav-item > a:focus {
+		opacity: 1;
+	}
