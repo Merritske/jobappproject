@@ -9,11 +9,11 @@ function Home() {
         className="navbar navbar-toggleable-md navbar-light fixed-top"
         id="navbar-main"
       >
-         
+     
         <Link className="navbar-brand" to="/home" title="Home">
           <i className="fa fa-cube"></i>
         </Link>
-        <div className="collapse navbar-collapse" id="navbarCollapse">
+            <div className="navbar-collapse" id="navbarCollapse">
           <ul className="navbar-nav ml-auto">
             <li className="nav-item">
               <Link className="nav-link" to="/work" title="Work">
