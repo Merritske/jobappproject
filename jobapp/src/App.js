@@ -2,10 +2,11 @@ import Home from "./pages/Home";
 import "./styles/App.css";
 import {Routes,Route} from 'react-router-dom'
 import Blog  from "./components/Blog" 
-import Jobs from "./components/Jobs" 
-import Contact from "./components/Contact" 
-import Apply from "./components/Apply" 
+import Jobs from "./pages/Jobs" 
+import Contact from "./pages/Contact" 
+import Apply from "./pages/Apply" 
 import Work  from "./components/Blog" 
+import Navbar from "./components/Navbar";
  
 function App() {
   return (
@@ -16,8 +17,8 @@ function App() {
       
 
        <Routes>
-            
-            <Route exact path="/" element={<Home />}/> 
+         
+                   <Route exact path="/" element={<Home />}/> 
             
             <Route path="/Work" element={<Work />} />
 
@@ -25,6 +26,8 @@ function App() {
             <Route exact path="/Contact" element={<Contact/>} />
             <Route exact path="/Apply" element={<Apply />} />
             <Route exact path="/Blog" element={<Blog />} />
+           
+       
             
             
           </Routes>

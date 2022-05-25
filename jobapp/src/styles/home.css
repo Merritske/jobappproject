@@ -44,6 +44,11 @@ a:focus {
 	font-family: 'Hind', sans-serif;
 	background-color: #fff;
 	border-bottom: 1px solid #d7e2e9;
+	display: flex;
+	justify-content: space-evenly;
+    align-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
 }
 
 #navbar-main .navbar-brand {
