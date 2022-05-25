@@ -15,13 +15,13 @@ function Navbar() {
         <div className="navbar-collapse" id="navbarCollapse">
       <ul className="navbar-nav ml-auto">
         <li className="nav-item">
-          {/* <Link className="nav-link" to="/work" title="Work">
-            Work
-          </Link> */}
+        <Link className="nav-link" to="/work" title="Work">
+         Post job
+          </Link>
         </li>
         <li className="nav-item">
           <Link className="nav-link" to="/jobs" title="Jobs">
-            Jobs
+         upload CV
           </Link>
         </li>
         <li className="nav-item">
