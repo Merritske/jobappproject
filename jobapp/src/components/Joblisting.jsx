@@ -1,16 +1,30 @@
-import React from 'react'
+import React, { useState } from 'react'
 import '../styles/joblisting.css'
 import { Link } from "react-router-dom";
+import { Accordion } from "react-bootstrap"
 
 function Joblisting() {
+  const[jobdescription, setJobdescription] = useState(false)
+function toggleJob(){
+setJobdescription(true)
+fetch("https://www.vdab.be/vindeenjob/vacatures?trefwoord=front-end%20developer&locatie=1000%20Brussel&afstand=60&locatieCode=32&sort=standaard")
+.then(res=>res.json())
+.then((data)=>{
+  console.log(data)
+})
+}
+console.log(jobdescription)
   return (
-    <div>  <div className="jobs" id="joblist">
+  <div className="jobs" id="joblist">
     <div className="row">
-      <div className="col-md-10 offset-md-1">
+      <div className="col md-1 ">
         <ul className="job-list">
           <li className="job-preview">
             <div className="content float-left">
-              <h4 className="job-title">Senior Web Designer</h4>
+              
+    
+      <h4 className="job-title" onClick={toggleJob} >Senior Web Designer</h4>
+
               <h5 className="company">Seattle, WA</h5>
             </div>
             <Link
@@ -83,7 +97,7 @@ function Joblisting() {
         </ul>
       </div>
     </div>
-  </div></div>
+  </div>
   )
 }
 
