@@ -2,10 +2,12 @@ import React from 'react'
 import Navbar from '../components/Navbar'
 
 const Blog = () => {
+
   return (
-    <div>
+    <div className='container'>
+      
       <Navbar/>
-       <div  className="card" style="width: 18rem;">
+   <div className='card'>
   <div  className="card-body">
     <h5  className="card-title">Card title</h5>
     <h6  className="card-subtitle mb-2 text-muted">Card subtitle</h6>
