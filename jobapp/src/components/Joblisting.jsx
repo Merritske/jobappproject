@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 function Joblisting() {
   return (
-    <div>  <div className="container" id="joblist">
+    <div>  <div className="jobs" id="joblist">
     <div className="row">
       <div className="col-md-10 offset-md-1">
         <ul className="job-list">
