@@ -39,7 +39,7 @@ const Apply = () => {
       errors.Firstname = "Username is required!";
     }
     if (!values.Lastname) {
-      errors.Firstname = "Lastname is required!";
+      errors.Firstname = "Firstname is required!";
     }
     if (!values.email) {
       errors.email = "Email is required!";
@@ -50,13 +50,10 @@ const Apply = () => {
   };
   return (
     <>
-  <Navbar/>
+      <Navbar />
       <div className="container px-2  ">
-       
         <main>
-          <div className="py-3 ">
-           
-          </div>
+          <div className="py-3 "></div>
 
           <div className="row g-5">
             <div className="col-md-5 col-lg-4 order-md-last"></div>
@@ -109,7 +106,7 @@ const Apply = () => {
                     <label htmlFor="address" className="form-label">
                       Address
                     </label>
-                     <input
+                    <input
                       type="text"
                       className="form-control"
                       id="address"
@@ -117,25 +114,24 @@ const Apply = () => {
                       name="adress"
                       onChange={handleChange}
                       value={formValues.adress}
-                    /> 
-                      
+                    />
                   </div>
                   <div className="col-12"></div>
-                   <div className="col-12">
+                  <div className="col-12">
                     <label htmlFor="Qalification" className="form-label">
-                      Qalification
+                      Qualification
                     </label>
                     <input
                       type="text"
                       className="form-control"
                       id="qal"
-                      placeholder="text"
+                      placeholder="type here"
                       name="ftext"
                       onChange={handleChange}
                       value={formValues.qalification}
                     />
                   </div>
-                  
+
                   <div className="col-12">
                     <label htmlFor="address" className="form-label">
                       Exprience
@@ -151,15 +147,13 @@ const Apply = () => {
                     />
                   </div>
                   <label>Select your CV:</label>
-                  <input type="file"/>
-                                      <button className="btn btn-dark" type="submit">
-                  Submit
-                </button>
+                  <input type="file" />
+                  <button className="btn btn-dark" type="submit">
+                    Submit
+                  </button>
                 </div>
 
                 <hr className="my-6" />
-
-                 
               </form>
             </div>
           </div>
@@ -189,4 +183,3 @@ const Apply = () => {
 };
 
 export default Apply;
- 

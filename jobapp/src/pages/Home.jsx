@@ -1,13 +1,13 @@
 import React from "react";
 import "../styles/home.css";
 
-import Navbar from "../components/Navbar";
+ 
 import Joblisting from "../components/Joblisting";
 
 function Home() {
   return (
     <div>
-     <Navbar/>
+ 
 
       <header className="masthead">
         <div className="headHome">

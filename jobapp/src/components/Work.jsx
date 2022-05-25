@@ -1,9 +1,10 @@
 import React from 'react'
-
+ 
 const Work = () => {
   return (
     <div>
-       This is Work
+     This is post job page
+     
     </div>
   )
 }

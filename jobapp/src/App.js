@@ -5,14 +5,19 @@ import Blog from "./pages/Blog"
 import Jobs from "./pages/Jobs"
 import Apply from "./pages/Apply"
 import Work from "./components/Work"
+import Navbar from "./components/Navbar";
+ 
 
 
 function App() {
   return (
     <div className="App">
+     <Navbar/>
+
       <Routes>
 
         <Route exact path="/" element={<Home />} />
+        
        <Route path="/Work" element={<Work />} /> 
         <Route exact path="/Jobs" element={<Jobs />} />
         <Route exact path="/Apply" element={<Apply />} />
