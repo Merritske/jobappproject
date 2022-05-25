@@ -1,6 +1,6 @@
 import Home from "./pages/Home";
 import "./styles/App.css";
-import {Routes,Route} from "react-router-dom"
+import {Routes,Route} from 'react-router-dom'
 import Blog  from "./components/Blog" 
 import Jobs from "./components/Jobs" 
 import Contact from "./components/Contact" 
@@ -14,9 +14,8 @@ function App() {
        
        
       
-     
-           
-          <Routes>
+
+       <Routes>
             
             <Route exact path="/" element={<Home />}/> 
             
@@ -29,6 +28,9 @@ function App() {
             
             
           </Routes>
+    
+           
+        
            
          
        
