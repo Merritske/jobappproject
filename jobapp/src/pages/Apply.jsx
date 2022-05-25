@@ -150,7 +150,9 @@ const Apply = () => {
                       value={formValues.exprience}
                     />
                   </div>
-                  <button className="btn btn-dark" type="submit">
+                  <label>Select your CV:</label>
+                  <input type="file"/>
+                                      <button className="btn btn-dark" type="submit">
                   Submit
                 </button>
                 </div>
