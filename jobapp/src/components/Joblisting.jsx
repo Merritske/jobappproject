@@ -16,7 +16,7 @@ fetch("https://www.vdab.be/vindeenjob/vacatures?trefwoord=front-end%20developer&
 console.log(jobdescription)
   return (
   <div className="jobs" id="joblist">
-    <div className="row">
+    <div className="row text-center">
       <div className="col md-1 ">
         <ul className="job-list">
           <li className="job-preview">

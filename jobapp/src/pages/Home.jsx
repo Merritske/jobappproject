@@ -3,13 +3,13 @@ import "../styles/home.css";
 
  
 import Joblisting from "../components/Joblisting";
+import { Container } from "react-bootstrap";
 
 function Home() {
   return (
-    <div>
- 
+<Container fluid className="text-center">
 
-      <header className="masthead">
+<header className="masthead">
         <div className="headHome">
                 <h1 className="heading">Open Positions</h1>
                 <span className="subheading">
@@ -23,7 +23,11 @@ function Home() {
       <section>
       <Joblisting/>
       </section>
-    </div>
+
+</Container>
+ 
+
+
   );
 }
 

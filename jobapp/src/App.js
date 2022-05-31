@@ -5,14 +5,14 @@ import Blog from "./pages/Blog"
 import Jobs from "./pages/Jobs"
 import Apply from "./pages/Apply"
 import Work from "./components/Work"
-import Navbar from "./components/Navbar";
+import NavbarHome from "./components/Navbar";
  
 
 
 function App() {
   return (
     <div className="App">
-     <Navbar/>
+     <NavbarHome/>
 
       <Routes>
 
