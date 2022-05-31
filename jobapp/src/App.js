@@ -7,13 +7,25 @@ import Apply from "./pages/Apply"
 import Work from "./components/Work"
 import NavbarHome from "./components/Navbar";
 import Footer from "./components/Footer";
+import Navbar from "./components/Navbar";
+import  Login from "./Login";
+import {useSelector} from 'react-redux'
+import { selectUser } from "./components/userSlice";
  
 
 
 function App() {
+  const user=useSelector(selectUser);
+  console.log(user)
+   
   return (
-    <div className="App">
-     <NavbarHome/>
+     <>
+     {/* <NavbarHome/> */}
+    
+    {
+      !user ?(<Login/>):(
+        <div className="App">
+     <Navbar/>
 
       <Routes>
 
@@ -25,8 +37,13 @@ function App() {
         <Route exact path="/Blog" element={<Blog />} />
 
       </Routes>
-<Footer/>
+           <Footer/>
     </div>
+
+      )
+    }
+    </>
+     
   );
 }
 
