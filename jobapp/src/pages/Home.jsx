@@ -7,7 +7,7 @@ import { Container } from "react-bootstrap";
 
 function Home() {
   return (
-<Container fluid className="text-center">
+<Container fluid className="text-center ">
 
 <header className="masthead">
         <div className="headHome">

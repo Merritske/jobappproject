@@ -1,32 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Hind);
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
 
-body {
-	font-family: 'Open Sans', sans-serif;
-	color: #31383d;
-	font-size: 1.1rem;
-}
-
-section {
-	padding: 30px 0;
-	background: #fff;
-}
-
-p {
-	line-height: 1.5;
-	margin: 30px 0;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: 'Hind', sans-serif;
-  font-weight: 800;
-}
-
 a {
 	color: #31383d;
 	-webkit-transition: all 0.2s;
@@ -43,26 +17,31 @@ a:focus {
 	font-family: 'Hind', sans-serif;
 	border-bottom: 1px solid #d7e2e9;
 	display: flex;
-	justify-content: space-between ;
-		background: transparent;
-		border-bottom: 1px solid transparent;
-		font-size: 1.5em;
+	justify-content: space-between;
+	background: transparent;
+	border-bottom: 1px solid transparent;
+	font-size: 1.5em;
+;
+}
+.navbar{
+	margin-bottom: 30px ;
+}
+.fa {
+	font-size: 2em;
 }
 
- 
-.nav-link{
-		color: #fff;
+.nav-link {
+	color: #fff;
+padding: 0 !important;
 }
 
+#navbar-main .navbar-brand {
+	color: #fff;
+	opacity: 0.8;
+	padding: 0.95rem 1.2rem;
 
-
-	#navbar-main .navbar-brand {
-		color: #fff;
-		opacity: 0.8;
-		padding: 0.95rem 1.2rem;
-	
-	}	
-	#navbar-main .navbar-brand:hover,
-	#navbar-main .navbar-brand:focus {
-		opacity: 1;
-	} 
+}
+.nav-item{
+	padding:0;
+	margin: 0;
+}

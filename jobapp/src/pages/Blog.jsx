@@ -6,7 +6,7 @@ const Blog = () => {
   return (
     <div className='container'>
       
-      <Navbar/>
+
    <div className='card'>
   <div  className="card-body">
     <h5  className="card-title">Card title</h5>

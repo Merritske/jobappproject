@@ -6,6 +6,7 @@ import Jobs from "./pages/Jobs"
 import Apply from "./pages/Apply"
 import Work from "./components/Work"
 import NavbarHome from "./components/Navbar";
+import Footer from "./components/Footer";
  
 
 
@@ -24,7 +25,7 @@ function App() {
         <Route exact path="/Blog" element={<Blog />} />
 
       </Routes>
-
+<Footer/>
     </div>
   );
 }

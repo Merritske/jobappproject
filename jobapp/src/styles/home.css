@@ -5,6 +5,7 @@ body {
 	font-family: 'Open Sans', sans-serif;
 	color: #31383d;
 	font-size: 1.1rem;
+
 }
 
 section {
@@ -27,20 +28,8 @@ h6 {
   font-weight: 800;
 }
 
-a {
-	color: #31383d;
-	-webkit-transition: all 0.2s;
-	-moz-transition: all 0.2s;
-	transition: all 0.2s;
-}
 
-a:hover,
-a:focus {
-	color: #73a5fc;
-}
-
-
-header.masthead {
+.masthead {
 	height: 500px;
 	background: #a3bded;
 	background: -webkit-linear-gradient(-20deg, #a3bded 0%, #6991c7 100%);

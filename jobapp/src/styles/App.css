@@ -1,0 +1,13 @@
+*, body, .App{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.footerlist{
+  background-color: transparent;
+  border: 0;
+}
+.footerlist>a{
+    text-decoration-line: none;
+}
