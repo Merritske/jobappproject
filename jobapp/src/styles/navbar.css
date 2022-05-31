@@ -43,8 +43,7 @@ a:focus {
 	font-family: 'Hind', sans-serif;
 	border-bottom: 1px solid #d7e2e9;
 	display: flex;
-	justify-content: space-between;
-    flex-wrap: wrap;
+	justify-content: space-between ;
 		background: transparent;
 		border-bottom: 1px solid transparent;
 		font-size: 1.5em;
@@ -56,11 +55,6 @@ a:focus {
 }
 
 
-.nav-item{
-display: flex;
-	justify-content: space-between ;
-
-}
 
 	#navbar-main .navbar-brand {
 		color: #fff;
