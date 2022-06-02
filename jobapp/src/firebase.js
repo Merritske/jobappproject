@@ -1,12 +1,11 @@
 /* eslint-disable import/no-anonymous-default-export */
  
- 
-import firebase from 'firebase/compat/app';
-import { getAnalytics } from "firebase/analytics";
-import 'firebase/compat/firestore';
-import { initializeApp } from "firebase/app";
-import 'firebase/compat/auth'
- 
+import firebase from "firebase/compat/app";
+import "firebase/compat/auth";
+import "firebase/compat/firestore";
+  
+  
+//createUserWithEmailAndPassword(auth, email, password).then((userCredential) => {// Signed in const user = userCredential.user;// ...}).catch((error) => {const errorCode = error.code;const errorMessage = error.message;// ..});
  
 
 const firebaseConfig = {
@@ -20,21 +19,13 @@ const firebaseConfig = {
 
 //This special line of code here connects everything
  
-  firebase.initializeApp(firebaseConfig);
-  const app = initializeApp(firebaseConfig);
-
-  //gets the firestore database
-  // const db = app.firestore();
    
-  var db= firebase.firestore()
-  //  database = firebase.database();
-  const analytics = getAnalytics(app);
 
 
-  //we want firebase authntication
-
-const auth=firebase.auth()
-  export default {db,auth}
-
-
-
+// const auth =firebase.auth();
+// export {auth};
+const firebaseApp = firebase.initializeApp(firebaseConfig);
+const db = firebaseApp.firestore();
+const auth = firebase.auth();
+export { db, auth };
+export default firebase;
