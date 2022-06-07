@@ -57,11 +57,22 @@ function Login() {
     if (!password) {
       return alert("Password is required");
     }
-
+ 
     auth.signInWithEmailAndPassword(email, password).then((user) => {
+
       console.log(user);
+       // eslint-disable-next-line no-unused-expressions
+       auth.user;
        
-    });
+    })
+    .catch((error)=>{
+      alert(error)
+    })
+    
+     
+    setEmail("");
+    setPassword("");
+     
   };
 
   return (

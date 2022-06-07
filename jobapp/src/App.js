@@ -11,7 +11,7 @@ import Navbar from "./components/Navbar";
 import  Login from "./Login";
 import {useSelector} from 'react-redux'
 import { selectUser } from "./components/userSlice";
- 
+ import {db} from './firebase'
 
 
 function App() {
