@@ -45,3 +45,8 @@ padding: 0 !important;
 	padding:0;
 	margin: 0;
 }
+.btn-signout{
+	width: 80px;
+	color: red;
+	
+}

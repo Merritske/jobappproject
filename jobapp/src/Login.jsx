@@ -58,11 +58,17 @@ function Login() {
       return alert("Password is required");
     }
  
-    auth.signInWithEmailAndPassword(email, password).then((user) => {
+    auth.signInWithEmailAndPassword(email, password).then(({user}) => {
 
       console.log(user);
-       // eslint-disable-next-line no-unused-expressions
-       auth.user;
+      dispatch(
+        loginuser({
+          email:user.email,
+          uid: user.uid,
+          displayName:user.displayName 
+        })
+      );
+       
        
     })
     .catch((error)=>{

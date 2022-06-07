@@ -1,13 +1,13 @@
 import React, { useState } from 'react'
 import '../styles/joblisting.css'
 import { Link } from "react-router-dom";
-import { Accordion } from "react-bootstrap"
+ 
 
 function Joblisting() {
   const[jobdescription, setJobdescription] = useState(false)
 function toggleJob(){
 setJobdescription(true)
-fetch("https://www.vdab.be/vindeenjob/vacatures?trefwoord=front-end%20developer&locatie=1000%20Brussel&afstand=60&locatieCode=32&sort=standaard")
+fetch("")
 .then(res=>res.json())
 .then((data)=>{
   console.log(data)
