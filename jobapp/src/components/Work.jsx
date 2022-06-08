@@ -2,13 +2,16 @@
 import React, { useState, useEffect } from "react";
 import { Button, Container, Form, FormGroup, FormLabel } from "react-bootstrap";
 import "../styles/apply.css";
+import { CKEditor } from '@ckeditor/ckeditor5-react';
+import ClassicEditor from '@ckeditor/ckeditor5-build-classic';
+
 const Work = () => {
   const initialValues = {
-  jobtitle: "",
+    jobtitle: "",
     companyName: "",
     email: "",
     address: "",
-  description: "",
+    description: "",
   };
   const [formValues, setFormValues] = useState(initialValues);
   const [formErrors, setFormErrors] = useState({});
@@ -19,6 +22,8 @@ const Work = () => {
     setFormValues({ ...formValues, [name]: value });
     //  console.log(formValues)
   };
+
+
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -38,7 +43,7 @@ const Work = () => {
       errors.jobtitle = "Jobtitle is required!";
     }
     if (!values.jobtitle) {
-      errors.companyName= "Company name is required!";
+      errors.companyName = "Company name is required!";
     }
     if (!values.email) {
       errors.email = "Email is required!";
@@ -49,64 +54,67 @@ const Work = () => {
   };
   return (
 
- 
-  <Container fluid className="mt-5 w-50 text-align-start" >
-    <Form onSubmit={handleSubmit}>
+
+    <Container fluid className="mt-5 w-50 text-align-start" >
+      <Form onSubmit={handleSubmit}>
         <h3 className="m-5 text-center">Post a job </h3>
-            <FormGroup >
+        <FormGroup >
           <FormLabel>Jobtitle</FormLabel>
           <Form.Control type="text" name="jobtitle" value={formValues.jobtitle} onChange={handleChange} />
-                      <p>{formErrors.jobtitle}</p>
-            </FormGroup>
-            <FormGroup>
+          <p>{formErrors.jobtitle}</p>
+        </FormGroup>
+        <FormGroup>
           <FormLabel>Company name</FormLabel>
           <Form.Control type="text" name="companyName" value={formValues.companyName} onChange={handleChange} />
-                      <p>{formErrors.companyName}</p>
-            </FormGroup>
-            <FormGroup>
+          <p>{formErrors.companyName}</p>
+        </FormGroup>
+        <FormGroup>
           <FormLabel>Email</FormLabel>
           <Form.Control type="text" name="email" value={formValues.email} onChange={handleChange} />
-                      <p>{formErrors.email}</p>
-            </FormGroup>
-            <FormGroup>
+          <p>{formErrors.email}</p>
+        </FormGroup>
+        <FormGroup>
           <FormLabel>Address</FormLabel>
           <Form.Control type="text" name="address" value={formValues.address} onChange={handleChange} />
-                      <p>{formErrors.address}</p>
-            </FormGroup>
-            <FormGroup>
+          <p>{formErrors.address}</p>
+        </FormGroup>
+        <FormGroup>
           <FormLabel>Description</FormLabel>
-          <Form.Control as="textarea" rows={15} name="description" value={formValues.description} onChange={handleChange} />
+          <CKEditor
+            editor={ClassicEditor}
 
-            </FormGroup>
-     
+            data="<p>Put your jobdescription here!</p>"
 
-            <Button variant="primary" type="submit" className="m-2" >
-              Submit
-            </Button>
+            onReady={editor => {
+              // You can store the "editor" and use when it is needed.
+              console.log('Editor is ready to use!', editor);
+            }}
+            onChange={(event, editor) => {
+              const data = editor.getData();
+              console.log({ event, editor, data });
+            }}
+            onBlur={(event, editor) => {
+              console.log('Blur.', editor);
+            }}
+            onFocus={(event, editor) => {
+              console.log('Focus.', editor);
+            }}
+          />
+        </FormGroup>
+        <Button variant="primary" type="submit" className="m-2" >
+          Submit
+        </Button>
       </Form>
 
-             
-
-                <hr className="my-6" />
-      
-      
 
 
-      <footer className="my-5 pt-5 text-muted text-center text-small">
-        <p className="mb-1">© 2017–2022 Fatema-An</p>
-        <ul className="list-inline">
-          <li className="list-inline-item">
-            <a href="/privacy">Privacy</a>
-          </li>
-          <li className="list-inline-item">
-            <a href="/Terms">Terms</a>
-          </li>
-          <li className="list-inline-item">
-            <a href="/Support">Support</a>
-          </li>
-        </ul>
-      </footer>
-  </Container>
+      <hr className="my-6" />
+
+
+
+
+
+    </Container>
 
 
   )
