@@ -3,6 +3,7 @@
 import firebase from "firebase/compat/app";
 import "firebase/compat/auth";
 import "firebase/compat/firestore";
+import {collection, getFirestore,getDocs, doc} from 'firebase/firestore'
   
   
 //createUserWithEmailAndPassword(auth, email, password).then((userCredential) => {// Signed in const user = userCredential.user;// ...}).catch((error) => {const errorCode = error.code;const errorMessage = error.message;// ..});
@@ -25,7 +26,25 @@ const firebaseConfig = {
 // const auth =firebase.auth();
 // export {auth};
 const firebaseApp = firebase.initializeApp(firebaseConfig);
-const db = firebaseApp.firestore();
+// const db = firebaseApp.firestore();
+const db =getFirestore();
 const auth = firebase.auth();
+
+// const colRef =collection(db,'job-desc')
+
+
+// getDocs(colRef)
+// .then((snapshot)=>{
+//    let jobdesc =[]
+//    snapshot.docs .forEach((doc)=>{
+//      jobdesc.push({...doc.data(),id:doc.id})
+//    })
+//    console.log(jobdesc)
+// })
+// .catch(err =>{
+//   console.log(err.message)
+// })
+
+
 export { db, auth };
 export default firebase;

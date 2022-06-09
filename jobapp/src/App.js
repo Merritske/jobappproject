@@ -55,7 +55,7 @@ function App() {
             <Route exact path="/Apply" element={<Apply />} />
             <Route exact path="/Blog" element={<Blog />} />
           </Routes>
-          <Footer />
+          <Footer /> 
         </div>
       )}
     </>
