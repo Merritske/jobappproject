@@ -1,5 +1,5 @@
 /* eslint-disable no-restricted-globals */
-import React, { useState } from "react";
+import React, {  useState } from "react";
 import "../styles/joblisting.css";
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
@@ -7,6 +7,9 @@ import firebase from "firebase/compat/app";
 import { collection, getFirestore, getDocs, doc } from "firebase/firestore";
 import Footer from "./Footer";
 
+let styles={
+
+}
 function Joblisting() {
   const [data, setData] = useState([]);
   const db = getFirestore();
@@ -27,35 +30,34 @@ function Joblisting() {
         console.log(err.message);
       });
   }  
-    const jobdescription= document.querySelectorAll(".jobdescription");
-  useEffect(() => {  
 
+  useEffect(() => {  
+toggleJob();
     getData();
     console.log(data);
   }, []);
 
-  //const [jobdescription, setJobdescription] = useState(false);
+ // const [jobdescription, setJobdescription] = useState(false);
 
-  console.log(jobdescription);
+
   function toggleJob(e) {
-    //setJobdescription(true);
-    // fetch("")
-    //   .then((res) => res.json())
-    //   .then((data) => {
+// setJobdescription(true);
+    const jobdescription= document.querySelectorAll(".jobdescription");
+    console.log(jobdescription);
       console.log(data)
         for(let x= 0; x<data.length; x++){
-          console.log(data[x].title);
-          console.log(e.target.innerText);
           if(data[x].title === e.target.innerText){
-            jobdescription[x].style.display = "block";
-         console.log("ok")
+           jobdescription[x].innerText = data[x].detail;
+           
+         console.log("ok")   
+          
           }else if(data[x].title !== e.target.innerText){
-            jobdescription[x].style.display = "none";
+            jobdescription[x].innerText = "";
           }
         }
-     // });
+    
   }
-  console.log(jobdescription);
+ // console.log(jobdescription);
   return (
     <div className="jobs" id="joblist">
       <div className="row text-center">
@@ -71,7 +73,12 @@ function Joblisting() {
                       <h2>{dev.companey}</h2>
                       <h3>{dev.place}</h3>
                  
-                      <h6 className="jobdescription" style={{"display": "none" , "textAlign":"start"}}>{dev.detail}</h6>  
+                      <h6 
+                      className="jobdescription"
+                      // style={ {"display": "none", "textAlign":"start"}}
+                       >
+                         {/* {dev.detail} */}
+                       </h6>  
                       <a
                         href="apply"
                         className="btn btn-apply float-sm-right float-xs-left"
