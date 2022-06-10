@@ -4,7 +4,7 @@ import { Button, Container, Form, FormGroup, FormLabel } from "react-bootstrap";
 import "../styles/apply.css";
 import { CKEditor } from '@ckeditor/ckeditor5-react';
 import ClassicEditor from '@ckeditor/ckeditor5-build-classic';
-
+//https://ckeditor.com/docs/ckeditor5/latest/index.html
 const Work = () => {
   const initialValues = {
     jobtitle: "",

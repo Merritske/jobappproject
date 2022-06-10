@@ -1,24 +1,26 @@
-.jobs{
+.jobs {
 	display: flex !important;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    max-width: 500px;
-    width: 100%;
-    margin: auto;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	max-width: 500px;
+	width: 100%;
+	margin: auto;
 }
-#joblist{
+
+#joblist {
 	position: relative;
 	top: -20px;
 }
+
 ul.job-list {
 	margin: 0;
 	padding: 0;
 	list-style: none;
 }
 
-ul.job-list > li.job-preview {
+ul.job-list>li.job-preview {
 	background: #fff;
 	border: 1px solid #d7e2e9;
 	-webkit-border-radius: 0.4rem;
@@ -33,11 +35,11 @@ ul.job-list > li.job-preview {
 	transition: all 0.3s ease 0s;
 }
 
-ul.job-list > li.job-preview:hover {
+ul.job-list>li.job-preview:hover {
 	cursor: pointer;
-	-webkit-box-shadow: 0 3px 8px rgba(0,0,0,0.05);
-	-moz-box-shadow: 0 3px 8px rgba(0,0,0,0.05);
-	box-shadow: 0 3px 8px rgba(0,0,0,0.05);
+	-webkit-box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05);
+	-moz-box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05);
+	box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05);
 }
 
 .job-title {
@@ -58,7 +60,7 @@ ul.job-list > li.job-preview:hover {
 	font-weight: 800;
 	letter-spacing: 1px;
 	background-color: transparent;
-	color:  #393a5f;
+	color: #393a5f;
 	border: 2px solid #393a5f;
 	padding: 0.6rem 2rem;
 	-webkit-border-radius: 2rem;
@@ -68,8 +70,13 @@ ul.job-list > li.job-preview:hover {
 
 .btn-apply:hover {
 	background-color: #393a5f;
-	color:  #fff;
+	color: #fff;
 	border: 2px solid #393a5f;
+}
+
+.jobdescription{
+
+	text-align: "start"
 }
 
 @media (max-width: 575px) {

@@ -20,25 +20,40 @@ function Joblisting() {
           jobdesc.push({ ...doc.data(), id: doc.id });
         });
         setData(jobdesc);
+     
       })
 
       .catch((err) => {
         console.log(err.message);
       });
-  }
-  useEffect(() => {
+  }  
+    const jobdescription= document.querySelectorAll(".jobdescription");
+  useEffect(() => {  
+
     getData();
     console.log(data);
   }, []);
 
-  const [jobdescription, setJobdescription] = useState(false);
-  function toggleJob() {
-    setJobdescription(true);
-    fetch("")
-      .then((res) => res.json())
-      .then((data) => {
-        // console.log(data);
-      });
+  //const [jobdescription, setJobdescription] = useState(false);
+
+  console.log(jobdescription);
+  function toggleJob(e) {
+    //setJobdescription(true);
+    // fetch("")
+    //   .then((res) => res.json())
+    //   .then((data) => {
+      console.log(data)
+        for(let x= 0; x<data.length; x++){
+          console.log(data[x].title);
+          console.log(e.target.innerText);
+          if(data[x].title === e.target.innerText){
+            jobdescription[x].style.display = "block";
+         console.log("ok")
+          }else if(data[x].title !== e.target.innerText){
+            jobdescription[x].style.display = "none";
+          }
+        }
+     // });
   }
   console.log(jobdescription);
   return (
@@ -48,13 +63,15 @@ function Joblisting() {
           <ul className="job-list">
             <li className="job-preview">
               <div className="content float-left">
-                <h4 className="job-title" onClick={toggleJob}>
-                  {data.map((dev) => (
+                <h4 className="job-title" >
+        
+ {data.map((dev) => (
                     <div key={dev.id}>
-                      <h1>{dev.title}</h1>
+                      <h1 onClick={(e)=>toggleJob(e)}>{dev.title}</h1>
                       <h2>{dev.companey}</h2>
                       <h3>{dev.place}</h3>
-                      <h6>{dev.detail}</h6>
+                 
+                      <h6 className="jobdescription" style={{"display": "none" , "textAlign":"start"}}>{dev.detail}</h6>  
                       <a
                         href="apply"
                         className="btn btn-apply float-sm-right float-xs-left"
@@ -63,6 +80,7 @@ function Joblisting() {
                       </a>
                     </div>
                   ))}
+       
                 </h4>
               </div>
             </li>

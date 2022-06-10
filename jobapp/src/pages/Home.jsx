@@ -21,7 +21,7 @@ function Home() {
       </header>
 
       <section>
-      <Joblisting/>
+      <Joblisting />
       </section>
 
 </Container>
